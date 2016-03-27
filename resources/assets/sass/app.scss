@@ -1,0 +1,150 @@
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@font-face {
+    font-family: SansPro;
+    src: url("/fonts/SourceSansPro-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: SansPro;
+    font-weight: bold;
+    src: url("/fonts/SourceSansPro-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: SansProBlack;
+    src: url("/fonts/SourceSansPro-Black.otf") format("opentype");
+}
+
+
+@font-face {
+    font-family: SansProSemibold;
+    src: url("/fonts/SourceSansPro-Semibold.otf") format("opentype");
+}
+
+$color-bg: #417b4f;
+
+$color-1: #b5d122;
+$color-2: #76bc51;
+$color-3: #c3c13a;
+$color-4: #e1a000;
+
+.block {
+    font-family: SansPro, Helvetica;
+    font-size: 16px;
+    color: #FFF;
+
+    &.block-text {
+        background-color: $color-bg;
+    }
+
+    &.block-one {
+        background-color: $color-1;
+    }
+
+    &.block-two {
+        background-color: $color-2;
+    }
+
+    &.block-three {
+        background-color: $color-3;
+    }
+
+    &.block-four {
+        background-color: $color-4;
+    }
+
+    &.block-five {
+        background-color: #FFF;
+        color: $color-bg;
+    }
+
+    h1 {
+        font-family: SansProSemibold, Helvetica;
+        text-align: center;
+    }
+
+    h1,
+    .sub-block,
+    .header-link a {
+        margin-bottom: 30px;
+    }
+
+    .header-link {
+        a {
+            font-size: 1.4em;
+            color: #FFF;
+            text-decoration: underline;
+            display: inherit;
+            text-align: center;
+
+            &:hover {
+                color: $color-bg;
+            }
+        }
+    }
+
+    &#pellets {
+        .col-sm-4 {
+            padding: 0;
+        }
+    }
+
+    &#contacts {
+        padding: 20px 0;
+
+        .col-sm-4 {
+            padding: 0;
+        }
+    }
+
+    &#order {
+        .col-md-8 {
+            padding: 0;
+        }
+    }
+}
+
+.navbar-pellco {
+    margin-bottom: 0;
+
+    .navbar-brand {
+        font-size: 28px;
+        font-family: SansProBlack, Helvetica;
+    }
+
+    ul.nav li {
+        font-size: 20px;
+        font-family: SansPro, Helvetica;
+    }
+
+    a.navbar-brand,
+    .navbar-nav li a {
+        color: #104f35;
+        line-height: 19px;
+
+        &:hover {
+            background-color: initial !important;
+            color: $color-1;
+        }
+    }
+}
+
+.separator {
+    margin: 10px;
+}
+
+form {
+    .btn {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 991px) {
+    .form-horizontal {
+        .control-label {
+            text-align: left;
+        }
+    }
+}
