@@ -6,6 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Posts extends Model {
 
-    protected $table = 'Posts';
+    protected $table = 'posts';
 
 }
