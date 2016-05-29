@@ -18,6 +18,8 @@ php artisan migrate
 
 php artisan key:generate
 
+sudo chmod 777 -R storage
+
 npm install
 
 gulp
