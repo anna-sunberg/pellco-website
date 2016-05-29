@@ -4,5 +4,5 @@
         <img class="img-responsive" src="/img/{{ $trio['image'] }}" />
     </div>
 </div>
-<div class="col-sm-4 sub-block">{{ $trio['text_1'] }}</div>
-<div class="col-sm-4 sub-block">{{ $trio['text_2'] }}</div>
+<div class="col-sm-4 sub-block">{{ strip_tags($trio['text_1']) }}</div>
+<div class="col-sm-4 sub-block">{{ strip_tags($trio['text_2']) }}</div>

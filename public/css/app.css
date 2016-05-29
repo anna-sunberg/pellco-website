@@ -5766,6 +5766,9 @@ button.close {
   font-family: SansProSemibold;
   src: url("/fonts/SourceSansPro-Semibold.otf") format("opentype"); }
 
+body {
+  font-family: SansPro; }
+
 .block {
   font-family: SansPro, Helvetica;
   font-size: 16px;
@@ -5777,7 +5780,7 @@ button.close {
   .block.block-two {
     background-color: #76bc51; }
   .block.block-three {
-    background-color: #c3c13a; }
+    background-color: #c4c23c; }
   .block.block-four {
     background-color: #e1a000; }
   .block.block-five {
@@ -5798,8 +5801,6 @@ button.close {
     text-align: center; }
     .block .header-link a:hover {
       color: #417b4f; }
-  .block#pellets .col-sm-4 {
-    padding: 0; }
   .block#contacts {
     padding: 20px 0; }
     .block#contacts .col-sm-4 {
@@ -5831,8 +5832,39 @@ form .btn {
   width: 100%;
   margin-bottom: 40px; }
 
+.popup {
+  background-color: #6db420;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  text-align: center;
+  color: #FFF;
+  position: fixed;
+  width: 350px;
+  padding: 40px;
+  margin: auto auto;
+  top: 0;
+  left: 0;
+  display: none; }
+  .popup .ok-btn {
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px; }
+
 @media (max-width: 991px) {
   .form-horizontal .control-label {
     text-align: left; } }
+
+/* 1382, 992, 768, 480 */
+@media (min-width: 1382px) {
+  .img-1 {
+    background-image: url("/img/img01_2560"); } }
+
+@media (min-width: 768px) and (max-width: 1382px) {
+  .img-1 {
+    background-image: url("/img/img01_1382"); } }
+
+@media (max-width: 768px) {
+  .img-1 {
+    background-image: url("/img/img01_768"); } }
 
 /*# sourceMappingURL=app.css.map */

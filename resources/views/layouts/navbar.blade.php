@@ -11,10 +11,10 @@
         <div class="navbar-right navbar-text">&nbsp;</div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#pellets">What is pellets</a></li>
-                <li><a href="#product">Our product</a></li>
-                <li><a href="#order">How to order</a></li>
-                <li><a href="#contacts">Contact us</a></li>
+                <li><a href="#pellets">Mitä pelletti on?</a></li>
+                <li><a href="#product">Tuotteemme</a></li>
+                <li><a href="#order">Tilaus</a></li>
+                <li><a href="#contacts">Yhteystiedot</a></li>
             </ul>
         </div>
     </div>

@@ -26,8 +26,12 @@ $color-bg: #417b4f;
 
 $color-1: #b5d122;
 $color-2: #76bc51;
-$color-3: #c3c13a;
+$color-3: #c4c23c;
 $color-4: #e1a000;
+
+body {
+    font-family: SansPro;
+}
 
 .block {
     font-family: SansPro, Helvetica;
@@ -84,12 +88,6 @@ $color-4: #e1a000;
         }
     }
 
-    &#pellets {
-        .col-sm-4 {
-            padding: 0;
-        }
-    }
-
     &#contacts {
         padding: 20px 0;
 
@@ -141,10 +139,53 @@ form {
     }
 }
 
+.popup {
+    background-color: #6db420;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFF;
+    position: fixed;
+    width: 350px;
+    padding: 40px;
+    margin: auto auto;
+    top: 0;
+    left: 0;
+    display: none;
+
+    .ok-btn {
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
 @media (max-width: 991px) {
     .form-horizontal {
         .control-label {
             text-align: left;
         }
+    }
+}
+
+/* 1382, 992, 768, 480 */
+
+
+
+@media(min-width: 1382px) {
+    .img-1 {
+        background-image: url('/img/img01_2560');
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1382px) {
+    .img-1 {
+        background-image: url('/img/img01_1382');
+    }
+}
+
+@media(max-width: 768px) {
+    .img-1 {
+        background-image: url('/img/img01_768');
     }
 }
