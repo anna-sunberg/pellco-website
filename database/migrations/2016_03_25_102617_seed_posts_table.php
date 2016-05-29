@@ -13,10 +13,10 @@ class SeedPostsTable extends Migration
     public function up()
     {
         DB::table('posts')->insert([
-            'title' => 'Hipster ipsum',
+            'title' => 'Miksi juuri meidän pellettimme',
             'image' => 'IMG_0355.jpg',
-            'text_1' => 'Freegan migas cray, bespoke bushwick man braid master cleanse banjo butcher venmo. Cliche truffaut keffiyeh locavore, plaid polaroid mumblecore franzen 8-bit jean shorts kale chips. Four dollar toast asymmetrical tumblr beard 3 wolf moon. Craft beer locavore tofu brooklyn neutra scenester four dollar toast polaroid crucifix.',
-            'text_2' => 'Austin yuccie wayfarers swag, fixie XOXO typewriter gluten-free small batch stumptown yr. Raw denim typewriter bushwick hashtag, polaroid celiac distillery etsy letterpress sartorial four loko roof party mumblecore cornhole. Waistcoat artisan four loko craft beer.'
+            'text_1' => 'PellCompany Oy tarjoaa asiakkailleen vain puupuruista valmistettuja pellettejä. Raaka-aineena on Venäjän pohjoisalueiden puhdas kuivattu ympäristöystävällinen puuraaka-aine, joka täysin vastaa eurooppalaisen EN PLUS A-1 -standardin vaatimuksia.',
+            'text_2' => 'Tilatkaa kotiinkuljetus ja vakuuttukaa pellettimme korkeasta laadusta!'
         ]);
     }
 
