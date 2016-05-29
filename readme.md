@@ -1,15 +1,23 @@
 # Installation
 
-npm install
+( sudo apt-get install php7.0-mbstring php7.0-dom php7.0-xml )
 
 composer install
 
-conf db in config/database.php
+set up db
 
-php artisan migrate
+cp .env.example .env
+
+edit .env db settings
 
 php artisan panel:install
 
-cp .env.example .env
+php artisan migrate --path="vendor/serverfireteam/panel/src/database/migrations"
+
+php artisan migrate
+
+php artisan key:generate
+
+npm install
 
 gulp
