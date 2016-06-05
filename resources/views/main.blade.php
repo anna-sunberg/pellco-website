@@ -22,8 +22,16 @@
   </div>
 </div>
 <div class="container-fluid block block-two">
-  <div class="col-sm-12">
-    Text here
+  <div class="img img-2"></div>
+  <div class="text-center">
+    <div class="heading">
+      15 kiloa pellettejä: 24 tuntia lämpöä
+    </div>
+    Kotiinkuljetus Helsingin seudulla (postinumeroalueet 00000-02999)
+    <br />
+    3 päivän kuluessa tilauksesta (vähintään 1 säkki)
+    <br />
+    Nopeasti ja vaivattomasti!
   </div>
 </div>
 <div id="product" class="container-fluid block block-text">
@@ -32,15 +40,20 @@
 
 </div>
 <div class="container-fluid block block-three">
-  More text
+  <div class="img img-3"></div>
+  <div class="text-center">
+    <div class="heading">
+      Luotettavaa energiaa, joustavat tuotemäärät
+    </div>
+    Toimitus: 1 - 20 europalettia 3 päivän kuluessa
+    <br />
+    Maksumuoto: tilisiirto
+  </div>
 </div>
 <div id="order" class="container-fluid block block-text">
 
   @include('layouts.form')
 
-</div>
-<div class="container-fluid block block-four">
-  Orange text
 </div>
 <div class="container-fluid block block-text">
   Map and stuff
