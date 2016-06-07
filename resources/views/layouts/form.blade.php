@@ -46,51 +46,49 @@
         </div>
 
         <div class="col-sm-12">
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label>Suostun henkilötietojeni käsittelyyn</label>
+            <div class="form-group">
+                <div class="col-sm-6 col-xs-10">
+                    <label for="inputAgree" class="control-label">Suostun henkilötietojeni käsittelyyn</label>
                 </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <input type="checkbox" tabindex="18" />
-                    </div>
+                <div class="col-sm-6 col-xs-2">
+                    <input type="checkbox" name="agree" class="form-control" tabindex="18" id="inputAgree" />
                 </div>
             </div>
         </div>
 
         <div class="col-sm-12 separator"><!-- separator --></div>
 
-        <div class="col-xs-6">
-            <div class="form-group">
-                <label for="selectItem" class="col-sm-4 control-label">Tuote</label>
-                <div class="col-sm-8">
-                    <select id="selectItem" name="item" class="form-control">
-                        @foreach($items as $item)
-                            <option data-price="{{ $item->price }}" data-sample="{{ $item->free_sample }}" value="{{ $item->id }}" tabindex="19">{{ $item->name }}</option>
-                        @endforeach
-                    </select>
+        <div class="col-xs-12 product-row">
+            <div class="col-xs-6">
+                <div class="form-group">
+                    <label for="selectItem" class="col-sm-4 control-label">Tuote</label>
+                    <div class="col-sm-8">
+                        <select id="selectItem" name="item" class="form-control" tabindex="20">
+                            @foreach($items as $item)
+                                <option data-price="{{ $item->price }}" data-sample="{{ $item->free_sample }}" value="{{ $item->id }}">{{ $item->name }}</option>
+                            @endforeach
+                        </select>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-xs-3">
-            <div class="form-group">
-                <label for="inputAmount" class="col-sm-6 control-label">Määrä</label>
-                <div class="col-sm-6">
-                    <input type="number" name="amount" id="inputAmount" class="input-sm form-control" placeholder="Määrä" value="1" tabindex="19" />
+            <div class="col-xs-3">
+                <div class="form-group">
+                    <label for="inputAmount" class="col-sm-6 control-label">Määrä</label>
+                    <div class="col-sm-6">
+                        <input type="number" name="amount" id="inputAmount" class="input-sm form-control" placeholder="Määrä" value="1" tabindex="21" />
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-xs-3">
-            <div class="form-group">
-                <label class="col-sm-4 col-sm-offset-2 col-xs-12 control-label">Hinta</label>
-                <label class="col-sm-6 control-label"><span id="price">0</span> €</label>
+            <div class="col-xs-3">
+                <div class="form-group">
+                    <label class="col-sm-4 col-sm-offset-2 col-xs-12 control-label">Hinta</label>
+                    <label class="col-sm-6 control-label"><span id="price">0</span> €</label>
+                </div>
             </div>
         </div>
 
-        <div class="col-sm-4 col-sm-offset-4">
-            <button type="submit" class="btn btn-default" tabindex="20">Tilaa</button>
+        <div class="col-sm-12">
+            <button type="submit" class="btn btn-default" tabindex="22">Tilaa</button>
         </div>
     </form>
 </div>
