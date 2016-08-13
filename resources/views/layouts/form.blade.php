@@ -3,7 +3,10 @@
         <h1>Tilauslomake</h1>
     </div>
     <form class="form-horizontal" id="orderForm" action="order">
-        {{ csrf_field() }}
+        {{--
+            {{ csrf_field() }}
+            disabled CSRF for this form
+        --}}
         <div class="col-sm-6">
             <div class="col-sm-12">
                 <div class="form-group">
@@ -51,7 +54,7 @@
                     <label for="inputAgree" class="control-label">Suostun henkilötietojeni käsittelyyn</label>
                 </div>
                 <div class="col-sm-6 col-xs-2">
-                    <input type="checkbox" name="agree" class="form-control" tabindex="18" id="inputAgree" />
+                    <input type="checkbox" name="agree" tabindex="18" id="inputAgree" />
                 </div>
             </div>
         </div>
@@ -87,8 +90,11 @@
             </div>
         </div>
 
-        <div class="col-sm-12">
+        <div class="col-sm-4 col-xs-12">
             <button type="submit" class="btn btn-default" tabindex="22">Tilaa</button>
+        </div>
+        <div class="col-sm-8 col-xs-12">
+            <div class="error-text">Ole hyvä ja täytä kaikki pakolliset kentät</div>
         </div>
     </form>
 </div>

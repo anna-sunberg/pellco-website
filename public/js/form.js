@@ -5,7 +5,8 @@ $(function() {
         priceSpan = $('#price'),
         inputPrice = $('#inputPrice'),
         popup = $('#popup'),
-        okButton = $('#popup .ok-btn');
+        okButton = $('#popup .ok-btn'),
+        errorText = $('.error-text');
 
     selectItem.on('change input select', updatePrice);
     inputAmount.on('change input paste', updatePrice);
@@ -54,6 +55,7 @@ $(function() {
         e.preventDefault();
 
         $('.has-error').removeClass('has-error');
+        errorText.hide();
 
         var json = $(this).serialize();
 
@@ -71,6 +73,8 @@ $(function() {
             Object.keys(response).forEach(function(key) {
                 $('form [name="' + key + '"]').closest('.form-group').addClass('has-error');
             });
+
+            errorText.show();
         });
 
         return false;

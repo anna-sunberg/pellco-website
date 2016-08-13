@@ -12,6 +12,7 @@ $color-2: #76bc51;
 $color-3: #c4c23c;
 $color-4: #e1a000;
 
+$color-error: #FF3300;
 
 @font-face {
     font-family: SansPro;
@@ -33,6 +34,11 @@ $color-4: #e1a000;
 @font-face {
     font-family: SansProSemibold;
     src: url("/fonts/SourceSansPro-Semibold.otf") format("opentype");
+}
+
+.error {
+    color: $color-error;
+    text-shadow: 0 0 1px rgba(100,255,255,0.5);
 }
 
 body {
@@ -179,6 +185,19 @@ form {
 
     .product-row {
         padding: 0;
+    }
+
+    .has-error {
+        .control-label {
+            @extend .error;
+        }
+    }
+
+    .error-text {
+        @extend .error;
+        padding-top: 7px;
+        font-weight: bold;
+        display: none;
     }
 }
 
