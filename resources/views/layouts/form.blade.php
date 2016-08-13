@@ -90,6 +90,8 @@
             </div>
         </div>
 
+        <div class="col-sm-12 separator"><!-- separator --></div>
+
         <div class="col-sm-4 col-xs-12">
             <button type="submit" class="btn btn-default" tabindex="22">Tilaa</button>
         </div>
