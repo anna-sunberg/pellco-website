@@ -14,24 +14,25 @@ class SeedItemsTable extends Migration
     {
         DB::table('items')->insert(
             array(
-                'name' => 'Bag',
-                'price' => 6.3,
-                'weight' => 16,
+                'name' => 'Säkki',
+                'price' => 6.5,
+                'weight' => 15,
                 'free_sample' => true
             ));
 
         DB::table('items')->insert(
             array(
-                'name' => 'Storage',
-                'price' => 148.0,
-                'weight' => 416
+                'name' => 'Europaletti',
+                'price' => 315.0,
+                'weight' => 975
             ));
 
         DB::table('items')->insert(
             array(
                 'name' => 'Big bag',
                 'price' => 148.0,
-                'weight' => 1000
+                'weight' => 1000,
+                'active' => 0
             ));
     }
 

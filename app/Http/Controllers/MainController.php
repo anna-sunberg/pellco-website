@@ -15,8 +15,8 @@ class MainController extends Controller
         return view('main', [
             'trio' => $posts->getPost(),
             'items' => $items,
-            'bag' => $items->where('name', 'Bag')->first(),
-            'storage' => $items->where('name', 'Storage')->first()
+            'bag' => $items->where('id', 1)->first(),
+            'storage' => $items->where('id', 2)->first()
         ]);
     }
 }

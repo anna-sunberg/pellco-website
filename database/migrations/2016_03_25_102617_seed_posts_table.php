@@ -15,7 +15,7 @@ class SeedPostsTable extends Migration
         DB::table('posts')->insert([
             'title' => 'Miksi juuri meidän pellettimme',
             'image' => 'IMG_0355.jpg',
-            'text_1' => 'PellCompany Oy tarjoaa asiakkailleen vain puupuruista valmistettuja pellettejä. Raaka-aineena on Venäjän pohjoisalueiden puhdas kuivattu ympäristöystävällinen puuraaka-aine, joka täysin vastaa eurooppalaisen EN PLUS A-1 -standardin vaatimuksia.',
+            'text_1' => 'PellCompany Oy tarjoaa asiakkailleen vain puupuruista valmistettuja pellettejä. Ostamme puupuruja mekaaniselta puunjalostusteollisuudelta, joka käyttää Venäjän pohjoisalueiden puhdasta kuivattua ympäristöystävällistä puuraaka-ainetta. Se antaa mahdollisuuden optimoida tuotantoa ja tuottaa ympäristöystävällisiä, laadukkaita ja edullisia pellettejä.',
             'text_2' => 'Tilatkaa kotiinkuljetus ja vakuuttukaa pellettimme korkeasta laadusta!'
         ]);
     }

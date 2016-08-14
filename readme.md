@@ -18,7 +18,7 @@ php artisan migrate
 
 php artisan key:generate
 
-sudo chmod 777 -R storage
+sudo chmod -R 777 storage
 
 npm install
 
