@@ -37,7 +37,7 @@
     </tr>
     <tr>
         <td>Total</td>
-        <td>{{$order->sum}}</td>
+        <td>{{$order->sum}} €</td>
     </tr>
 </table>
 </body>

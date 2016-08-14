@@ -22,6 +22,12 @@
   </div>
 </div>
 <div class="container-fluid block block-two">
+  <div class="price-tag">
+    <div class="price-text">
+      <h2>{{ number_format($bag->price, 2) }}</h2>
+      <span>euroa/{{ $bag->weight }} kg</span>
+    </div>
+  </div>
   <div class="img img-2"></div>
   <div class="text-center">
     <div class="heading">
@@ -40,6 +46,12 @@
 
 </div>
 <div class="container-fluid block block-three">
+  <div class="price-tag">
+    <div class="price-text">
+      <h2>{{ number_format($storage->price, 2) }}</h2>
+      <span>euroa/{{ $storage->weight }} kg</span>
+    </div>
+  </div>
   <div class="img img-3"></div>
   <div class="text-center">
     <div class="heading">
@@ -56,11 +68,11 @@
 
 </div>
 <div id="contacts" class="container-fluid block block-five">
-  <div class="col-sm-4 col-sm-offset-2">
+  <div class="col-xs-6 col-sm-4">
     <a href="callto:+358 40 123 4567">+358 40 123 4567</a>
   </div>
-  <div class="col-sm-4">
-    <a href="mailto:info@pellcompany.fi">info@pellco.fi</a>
+  <div class="col-xs-6 col-sm-4">
+    <a href="mailto:info@pellcompany.fi">info@pellcompany.fi</a>
   </div>
 </div>
 

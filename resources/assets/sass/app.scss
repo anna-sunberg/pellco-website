@@ -41,6 +41,27 @@ $color-error: #FF3300;
     text-shadow: 0 0 1px rgba(100,255,255,0.5);
 }
 
+@media(max-width: 490px) {
+    .price {
+        display: none;
+    }
+}
+
+.price {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    background: url('/img/price.svg') no-repeat center;
+
+    .price-text {
+        text-align: center;
+
+        h2 {
+            margin-bottom: 5px;
+        }
+    }
+}
+
 body {
     font-family: SansPro;
 }
@@ -89,6 +110,12 @@ body {
             bottom: 10px;
         }
 
+        .price-tag {
+            @extend .price;
+            top: 20%;
+            left: 55%;
+        }
+
     }
 
     &.block-three {
@@ -96,6 +123,12 @@ body {
 
         .text-center {
             bottom: 10px;
+        }
+
+        .price-tag {
+            @extend .price;
+            top: 20%;
+            left: 60%;
         }
     }
 
@@ -135,10 +168,6 @@ body {
 
     &#contacts {
         padding: 20px 0;
-
-        .col-sm-4 {
-            padding: 0;
-        }
     }
 
     &#order {
@@ -246,7 +275,7 @@ form {
 
 .img-2 {
     padding-top: 63%;
-    min-height: 250px;
+    min-height: 230px;
 }
 
 .img-3 {
