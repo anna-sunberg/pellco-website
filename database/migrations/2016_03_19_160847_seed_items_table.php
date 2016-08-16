@@ -16,8 +16,7 @@ class SeedItemsTable extends Migration
             array(
                 'name' => 'Säkki',
                 'price' => 6.5,
-                'weight' => 15,
-                'free_sample' => true
+                'weight' => 15
             ));
 
         DB::table('items')->insert(

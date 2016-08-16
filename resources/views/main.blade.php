@@ -69,7 +69,7 @@
 </div>
 <div id="contacts" class="container-fluid block block-five">
   <div class="col-xs-6 col-sm-4">
-    <a href="callto:+358 40 123 4567">+358 40 123 4567</a>
+    <a href="callto:+358 40 123 4567">044 989 6077</a>
   </div>
   <div class="col-xs-6 col-sm-4">
     <a href="mailto:info@pellcompany.fi">info@pellcompany.fi</a>
