@@ -6,7 +6,8 @@ $(function() {
         inputPrice = $('#inputPrice'),
         popup = $('#popup'),
         okButton = $('#popup .ok-btn'),
-        errorText = $('.error-text');
+        errorText = $('.error-text'),
+        inputAgree = $('#inputAgree');
 
     selectItem.on('change input select', updatePrice);
     inputAmount.on('change input paste', updatePrice);
@@ -56,6 +57,10 @@ $(function() {
 
         $('.has-error').removeClass('has-error');
         errorText.hide();
+
+        if (inputAgree.is(':checked')) {
+            inputAgree.val('on');
+        }
 
         var json = $(this).serialize();
 
