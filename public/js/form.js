@@ -7,7 +7,8 @@ $(function() {
         popup = $('#popup'),
         okButton = $('#popup .ok-btn'),
         errorText = $('.error-text'),
-        inputAgree = $('#inputAgree');
+        inputAgree = $('#inputAgree'),
+        submitButton = $('#submitButton');
 
     selectItem.on('change input select', updatePrice);
     inputAmount.on('change input paste', updatePrice);
@@ -55,6 +56,9 @@ $(function() {
     form.submit(function(e) {
         e.preventDefault();
 
+        submitButton.append($('<div class="loading-spinner" />'));
+        submitButton.attr('disabled', 'disabled');
+
         $('.has-error').removeClass('has-error');
         errorText.hide();
 
@@ -80,6 +84,9 @@ $(function() {
             });
 
             errorText.show();
+        }).complete(function() {
+            submitButton.find('.loading-spinner').remove();
+            submitButton.removeAttr('disabled');
         });
 
         return false;

@@ -93,7 +93,7 @@
         <div class="col-sm-12 separator"><!-- separator --></div>
 
         <div class="col-sm-4 col-xs-12">
-            <button type="submit" class="btn btn-default" tabindex="22">Tilaa</button>
+            <button type="submit" class="btn btn-default" id="submitButton" tabindex="22">Tilaa</button>
         </div>
         <div class="col-sm-8 col-xs-12">
             <div class="error-text">Ole hyvä ja täytä kaikki pakolliset kentät</div>

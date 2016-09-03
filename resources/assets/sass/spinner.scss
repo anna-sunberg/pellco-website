@@ -1,0 +1,37 @@
+// ------------- loading spinner -------------
+
+$loadingSpinnerDiameter: 28px;
+$loadingSpinnerStrokeWidth: 4px;
+$loadingSpinnerStrokeColor: $color-2;
+$loadingSpinnerOpacity: .8;
+$loadingSpinnerStrokeStyle: solid; // solid, dashed, dotted
+$loadingSpinnerSpeed: .7s;
+
+.loading-spinner {
+  border: $loadingSpinnerStrokeWidth $loadingSpinnerStrokeStyle $loadingSpinnerStrokeColor;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  width: $loadingSpinnerDiameter - ($loadingSpinnerStrokeWidth * 2);
+  height: $loadingSpinnerDiameter - ($loadingSpinnerStrokeWidth * 2);
+  opacity: $loadingSpinnerOpacity;
+  border-radius: 50%;
+  animation: loadingSpinner $loadingSpinnerSpeed infinite linear;
+  -webkit-animation: loadingSpinner $loadingSpinnerSpeed infinite linear;
+}
+
+button .loading-spinner {
+  margin: -10px 25px 0 0;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+@keyframes loadingSpinner {
+  from { transform: rotate(0deg)   }
+  to   { transform: rotate(360deg) }
+}
+
+@-webkit-keyframes loadingSpinner {
+  from { -webkit-transform: rotate(0deg)   }
+  to   { -webkit-transform: rotate(360deg) }
+}
