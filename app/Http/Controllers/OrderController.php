@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\SendOrderEmail;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-
-use App\Http\Controllers\EmailController;
 
 use App\Order;
 use App\Item;
@@ -46,12 +45,10 @@ class OrderController extends Controller
         $order->amount = $amount;
         $order->sum = $item->price * $amount;
 
-        EmailController::sendOrder($order);
-        
         $order->save();
 
-        return array(
-            
-        );
+        dispatch(new SendOrderEmail($order));
+
+        return array();
     }
 }
