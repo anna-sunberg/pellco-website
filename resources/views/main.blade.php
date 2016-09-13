@@ -5,9 +5,6 @@
 <div class="container-fluid block block-one">
   <div class="img img-1"></div>
   <h1>Meidän puupellettimme</h1>
-  <div class="header-link">
-    <a href="#order">Kokeile niitä ilmaiseksi</a>
-  </div>
 </div>
 <div id="pellets" class="container-fluid block block-text">
   <h1>Mitä pelletti on?</h1>
