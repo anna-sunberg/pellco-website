@@ -158,6 +158,8 @@ return [
 
         Serverfireteam\Panel\PanelServiceProvider::class,
 
+        Roumen\Sitemap\SitemapServiceProvider::class,
+
         'Collective\Html\HtmlServiceProvider'
     ],
 

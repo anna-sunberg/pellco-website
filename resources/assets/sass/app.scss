@@ -288,19 +288,19 @@ form {
 
     @media(min-width: $break-large) {
         .img-#{$i} {
-            background-image: url('/img/img0#{$i}_2560');
+            background-image: url('/img/img0#{$i}_2560.jpg');
         }
     }
 
     @media(min-width: $break-small) and (max-width: $break-large) {
         .img-#{$i} {
-            background-image: url('/img/img0#{$i}_1382');
+            background-image: url('/img/img0#{$i}_1382.jpg');
         }
     }
 
     @media(max-width: $break-small) {
         .img-#{$i} {
-            background-image: url('/img/img0#{$i}_768');
+            background-image: url('/img/img0#{$i}_768.jpg');
         }
     }
 }

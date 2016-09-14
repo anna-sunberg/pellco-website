@@ -9,7 +9,8 @@
         "laravel/framework": "5.2.*",
         "serverfireteam/panel": "^1.4",
         "laravelcollective/html": "~5.0",
-        "guzzlehttp/guzzle": "~4.0"
+        "guzzlehttp/guzzle": "~4.0",
+        "roumen/sitemap": "^2.6"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

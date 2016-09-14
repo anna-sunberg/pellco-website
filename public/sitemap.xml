@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://localhost:8888/vendor/sitemap/styles/xml.xsl" type="text/xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>http://localhost:8888</loc>
+		<priority>1.0</priority>
+		<lastmod>2016-09-14T23:25:11+03:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<image:image>
+			<image:loc>/img/img01_2560.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/img/img02_2560.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/img/img03_2560.jpg</image:loc>
+		</image:image>
+  </url>
+</urlset>
+
