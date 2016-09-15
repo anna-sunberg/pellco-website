@@ -65,6 +65,9 @@
 
 </div>
 <div id="contacts" class="container-fluid block block-five">
+  <div class="col-xs-12 col-sm-4">
+    PellCompany
+  </div>
   <div class="col-xs-6 col-sm-4">
     <a href="callto:+358 40 123 4567">044 989 6077</a>
   </div>
