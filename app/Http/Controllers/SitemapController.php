@@ -13,10 +13,11 @@ class SitemapController extends CrudController{
     public function all($entity){
 		$sitemap = App::make("sitemap");
 
-		$sitemap->add(URL::to('/'), date('c'), '1.0', 'weekly', [
-			array('url' => '/img/img01_2560.jpg'),
-			array('url' => '/img/img02_2560.jpg'),
-			array('url' => '/img/img03_2560.jpg')
+		$url = URL::to('/');
+		$sitemap->add($url, date('c'), '1.0', 'weekly', [
+			array('url' => $url . '/img/img01_2560.jpg'),
+			array('url' => $url . '/img/img02_2560.jpg'),
+			array('url' => $url . '/img/img03_2560.jpg')
 		]);
 
 		$sitemap->store('xml', 'sitemap');
