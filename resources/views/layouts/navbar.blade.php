@@ -6,7 +6,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Pellco</a>
+        <a class="navbar-brand" href="#">PellCompany</a>
 
         <div class="navbar-right navbar-text">&nbsp;</div>
         <div class="collapse navbar-collapse">
