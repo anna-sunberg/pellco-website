@@ -159,6 +159,7 @@ return [
         Serverfireteam\Panel\PanelServiceProvider::class,
 
         Roumen\Sitemap\SitemapServiceProvider::class,
+        Ipunkt\LaravelAnalytics\AnalyticsServiceProvider::class,
 
         'Collective\Html\HtmlServiceProvider'
     ],
@@ -207,7 +208,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => 'Collective\Html\FormFacade',
-        'Html' => 'Collective\Html\HtmlFacade'
+        'Html' => 'Collective\Html\HtmlFacade',
+        'Analytics' => Ipunkt\LaravelAnalytics\AnalyticsFacade::class,
 
     ],
 

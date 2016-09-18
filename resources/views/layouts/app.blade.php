@@ -14,6 +14,8 @@
     {!! Html::script('js/bootstrap.min.js') !!}
 
     {!! Html::script('js/form.js') !!}
+
+    {!! Analytics::render() !!}
 </head>
 
 <body>
